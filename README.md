@@ -4,11 +4,11 @@ A wrapper around grep to avoid typing common patterns.
 
 ## What? Why?
 
-I use grep a *lot*. When auditing code bases, looking at the output of [meg](https://github.com/tomnomnom/meg),
+I use grep a *lot*. When auditing code bases, looking at the output of [meg](https://github.com/anandpathak1/meg),
 or just generally dealing with large amounts of data. I often end up using fairly complex patterns like this one:
 
 ```
-▶ grep -HnrE '(\$_(POST|GET|COOKIE|REQUEST|SERVER|FILES)|php://(input|stdin))' *
+ grep -HnrE '(\$_(POST|GET|COOKIE|REQUEST|SERVER|FILES)|php://(input|stdin))' *
 ```
 
 It's really easy to mess up when typing all of that, and it can be hard to know if you haven't got any
@@ -18,7 +18,7 @@ I wrote `gf` to give names to the pattern and flag combinations I use all the ti
 becomes simply:
 
 ```
-▶ gf php-sources
+ gf php-sources
 ```
 
 ### Pattern Files
@@ -26,7 +26,7 @@ becomes simply:
 The pattern definitions are stored in `~/.gf` as little JSON files that can be kept under version control:
 
 ```
-▶ cat ~/.gf/php-sources.json
+ cat ~/.gf/php-sources.json
 {
     "flags": "-HnrE",
     "pattern": "(\\$_(POST|GET|COOKIE|REQUEST|SERVER|FILES)|php://(input|stdin))"
@@ -36,7 +36,7 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 To help reduce pattern length and complexity a little, you can specify a list of multiple patterns too:
 
 ```
-▶ cat ~/.gf/php-sources-multiple.json
+ cat ~/.gf/php-sources-multiple.json
 {
     "flags": "-HnrE",
     "patterns": [
@@ -51,7 +51,7 @@ There are some more example pattern files in the `examples` directory.
 You can use the `-save` flag to create pattern files from the command line:
 
 ```
-▶ gf -save php-serialized -HnrE '(a:[0-9]+:{|O:[0-9]+:"|s:[0-9]+:")'
+ gf -save php-serialized -HnrE '(a:[0-9]+:{|O:[0-9]+:"|s:[0-9]+:")'
 ```
 
 ### Auto Complete
@@ -59,7 +59,7 @@ You can use the `-save` flag to create pattern files from the command line:
 There's an auto-complete script included, so you can hit 'tab' to show you what your options are:
 
 ```
-▶ gf <tab>
+ gf <tab>
 base64       debug-pages  fw           php-curl     php-errors   php-sinks    php-sources  sec          takeovers    urls
 ```
 
@@ -108,13 +108,13 @@ In order to utilize a different engine, add `engine: <other tool>` to the releva
 If you've got Go installed and configured you can install `gf` with:
 
 ```
-▶ go get -u github.com/tomnomnom/gf
+ go get -u github.com/anandpathak1/gf
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
 
 ```
-▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
+ echo 'source $GOPATH/src/github.com/anandpathak1/gf/gf-completion.bash' >> ~/.bashrc
 ```
 
 Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
@@ -123,7 +123,7 @@ take effect.
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
 
 ```
-▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
+ cp -r $GOPATH/src/github.com/anandpathak1/gf/examples ~/.gf
 ```
 
 My personal patterns that I've included as examples might not be very useful to you, but hopefully
