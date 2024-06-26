@@ -107,8 +107,8 @@ In order to utilize a different engine, add `engine: <other tool>` to the releva
 
 If you've got Go installed and configured you can install `gf` with:
 
-```
- go get -u github.com/anandpathak1/gf
+```bash
+ go install -v github.com/anandpathak1/gf-2024@latest
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
