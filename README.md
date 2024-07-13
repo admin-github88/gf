@@ -1,23 +1,8 @@
-## Install
-
-If you've got Go installed and configured you can install `gf` with:
-
-```bash
- go install -v github.com/anandpathak1/gf@latest
-```
 # Gf-Patterns V 1.9
 
+## [GF](https://github.com/tomnomnom/gf) By [![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom) 
 
-## Install
-
-If you've got Go installed and configured you can install `gf` with:
-
-```bash
- go install -v github.com/anandpathak1/gf@latest
-```
-# Gf-Patterns V 1.9
-
-
+A wrapper around grep, to help you grep for things 
 
 # installation
 
@@ -27,16 +12,16 @@ If you've got Go installed and configured you can install `waybackurls & Gf` wit
 
 ```bash 
 
-▶ go get -u github.com/anandpathak1/waybackurls
+▶ go get -u github.com/tomnomnom/waybackurls
 ```
 ```bash
-▶ go get -u github.com/anandpathak1/gf
+▶ go get -u github.com/tomnomnom/gf
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
 
 ```bash
-▶ echo 'source $GOPATH/src/github.com/anandpathak1/gf/gf-completion.bash' >> ~/.bashrc
+▶ echo 'source $GOPATH/src/github.com/tomnomnom/gf/gf-completion.bash' >> ~/.bashrc
 ```
 
 Note that you'll have to restart your terminal, or run `source ~/.bashrc` for the changes to
@@ -47,11 +32,11 @@ To get started quickly, you can copy the example pattern files to `~/.gf` like t
 ▶ mkdir .gf
 ```
 ```bash
-▶ cp -r $GOPATH/src/github.com/anandpathak1/gf/examples ~/.gf
+▶ cp -r $GOPATH/src/github.com/tomnomnom/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
-▶ git clone https://github.com/anandpathak1/Gf-Patterns
+▶ git clone https://github.com/1ndianl33t/Gf-Patterns
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
@@ -352,9 +337,26 @@ The pattern definitions are stored in `~/.gf` as little JSON files that can be k
 }
 ```
 
+### Donations
+You can encourage me to contribute more to the open source with donations.
 
+- Paypal - [https://www.paypal.me/1ndianl33t](https://www.paypal.me/1ndianl33t)
+
+- GooglePay,Paytm -
+
+`8085778875`
+
+
+# Credit
+
+[![Twitter](https://img.shields.io/badge/twitter-@TomNomNom-blue.svg)](https://twitter.com/TomNomNom)
+[Bugcrowd HUNT](https://github.com/bugcrowd/HUNT)
+[![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
 
 # Contributers
 @victoni `added more redirect parameters`
 
 @s0meguy1 `redirect & ssrf pattern Added additional filters`
+
+# Contact
+[![Twitter](https://img.shields.io/badge/twitter-@1ndianl33t-blue.svg)](https://twitter.com/1ndianl33t)
