@@ -7,7 +7,7 @@
 If you've got Go installed and configured you can install `waybackurls & Gf` with:
 
 ```bash 
-go install -v github.com/anandpathak1/waybackurls@latest
+go install -v github.com/tomnomnom/waybackurls@latest
 ```
 ```bash
 go install -v github.com/anandpathak1/gf@latest
