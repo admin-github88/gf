@@ -8,10 +8,10 @@ If you've got Go installed and configured you can install `waybackurls & Gf` wit
 
 ```bash 
 
-go get -u github.com/anandpathak1/waybackurls
+go install -v github.com/anandpathak1/waybackurls@latest
 ```
 ```bash
-go get -u github.com/anandpathak1/gf
+go install -v github.com/anandpathak1/gf@latest
 ```
 
 If you've installed using `go get`, you can enable auto-completion to your `.bashrc` like this:
@@ -32,7 +32,7 @@ cp -r $GOPATH/src/github.com/anandpathak1/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
-git clone https://github.com/anandpathak1/Gf-Patterns
+git clone https://github.com/anandpathak1/gf
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
