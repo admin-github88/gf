@@ -18,16 +18,6 @@ If you've got Go installed and configured you can install `gf` with:
 # Gf-Patterns V 1.9
 
 
-## Install
-
-If you've got Go installed and configured you can install `gf` with:
-
-```bash
- go install -v github.com/anandpathak1/gf@latest
-```
-# Gf-Patterns V 1.9
-
-
 
 # installation
 
