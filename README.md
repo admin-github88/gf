@@ -31,7 +31,7 @@ cp -r $GOPATH/src/github.com/anandpathak1/gf/examples ~/.gf
 ```
 **MY Gf Patterns installation**
 ```bash
-git clone https://github.com/anandpathak1/gf
+git clone https://github.com/anandpathak1/Gf_Patterns
 ```
 
 To get started quickly, you can copy the example pattern files to `~/.gf` like this:
